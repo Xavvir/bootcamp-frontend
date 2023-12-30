@@ -7,7 +7,7 @@
 
 const precoEtiqueta = 100;
 
-function aplicarDesconto(valor,desconto) {
+function aplicarDesconto(precoEtiqueta,desconto) {
   /*Aplicar % de desconto*/
   return precoEtiqueta - (precoEtiqueta * (desconto/100));
 }
@@ -20,7 +20,7 @@ function parcelarAcima2X() {
   return precoEtiqueta * 1.1;
 }
 
-var formaDePagamento = 1;
+var formaDePagamento = 0;
 
 if (formaDePagamento === 1) {
   console.log(
@@ -38,4 +38,6 @@ if (formaDePagamento === 1) {
   console.log("Valor total", parcelar2X(), "reais");
 } else if (formaDePagamento === 4) {
   console.log("Valor total", parcelarAcima2X().toFixed(2), "reais");
+} else {
+  console.log ("ERRO: Escolha uma forma de pagamento")
 }
