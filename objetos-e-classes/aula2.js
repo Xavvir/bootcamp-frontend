@@ -32,3 +32,5 @@ class Pessoa {
 
 var jose = new Pessoa("José", 93, 1.73);
 console.log(jose.classificarImc());
+
+module.exports = { pessoa };
